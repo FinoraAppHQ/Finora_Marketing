@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sản phẩm — Finora hoạt động như thế nào</title>
+<meta name="description" content="Trạng thái tài chính, phân tích tác động, mô phỏng quyết định và hệ thống tài chính kết nối của Finora.">
+<meta property="og:title" content="Sản phẩm — Finora hoạt động như thế nào">
+<meta property="og:description" content="Trạng thái tài chính, phân tích tác động, mô phỏng quyết định và hệ thống tài chính kết nối của Finora.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/og-image.svg">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#noi-dung">Bỏ qua điều hướng</a>
+<header class="top">
+  <nav class="wrap nav" aria-label="Điều hướng chính">
+    <a class="logo" href="index.html" aria-label="Finora — trang chủ">
+      <span class="logo-mark" aria-hidden="true">
+        <i class="bar"></i>
+        <i class="sq1"></i>
+        <i class="sq2"></i>
+        <i class="sq3"></i>
+        <i class="sq4"></i>
+        <i class="neck"></i>
+      </span>
+      Finora
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul id="menu" class="menu"><li><a href="product.html" aria-current="page">Sản phẩm</a></li><li><a href="features.html">Tính năng</a></li><li><a href="pricing.html">Bảng giá</a></li><li><a href="download.html">Tải xuống</a></li><li><a class="btn btn-sm" href="#" data-app-link>Bắt đầu ngay</a></li></ul>
+  </nav>
+</header>
+<main id="noi-dung">
+<section class="wrap page-hero"><h1>Finora hoạt động như thế nào</h1><p class="lead">Từ trạng thái hiện tại, qua một quyết định, đến trạng thái tương lai. Bạn luôn là người quyết định cuối cùng.</p><div style="max-width:520px;margin-top:2rem"><ol class="flow" aria-label="Luồng hoạt động của Finora">
+    <li style="--i:0"><b>Trạng thái hiện tại</b><span>Số dư 50.000.000 ₫ · nợ 20 triệu · tiền nhà sắp tới hạn</span></li>
+    <li style="--i:1" class="flow-decision"><b>Quyết định</b><span>Mua MacBook — 25.000.000 ₫</span></li>
+    <li style="--i:2"><b>Tác động</b><span class="chips"><i>Ví</i><i>Ngân sách</i><i>Quỹ</i><i>Mục tiêu</i><i>Kế hoạch</i></span></li>
+    <li style="--i:3"><b>Trạng thái tương lai</b><span>Ngân sách vượt 17% · du lịch có thể chậm 21 ngày</span></li>
+    <li style="--i:4" class="flow-you"><b>Bạn quyết định</b><span>Finora cung cấp thông tin. Bạn giữ quyền kiểm soát.</span></li>
+  </ol></div></section><section class="story wrap" aria-labelledby="t-story">
+  <h2 id="t-story">Hai người cùng có 50.000.000 ₫. Tình hình tài chính lại khác nhau hoàn toàn.</h2>
+  <div class="pair">
+    <article><h3>Người A</h3><p>Không có nợ. Chưa có khoản lớn nào sắp đến hạn.</p><strong class="ok">Thoải mái</strong></article>
+    <article><h3>Người B</h3><p>Đang nợ 20 triệu. Tiền nhà sắp đến hạn. Cần 15 triệu cho mục tiêu tháng tới.</p><strong class="warn">Căng thẳng</strong></article>
+  </div>
+  <p class="story-end">Số dư chỉ là một con số. Trạng thái tài chính là tất cả những gì tác động đến con số đó — và Finora tổng hợp chúng lại cho bạn.</p>
+</section><section id="mo-phong" class="sim" aria-labelledby="t-sim">
+  <div class="wrap">
+    <h2 id="t-sim">Nếu tôi mua nó hôm nay thì sao?</h2>
+    <p class="lead">Chọn một khoản chi hoặc kéo thanh trượt. Finora tính tác động lên từng phần trong tài chính của bạn.</p>
+    <div class="sim-controls">
+      <div class="presets" role="group" aria-label="Khoản chi mẫu">
+        <button type="button" data-name="Mua MacBook" data-amount="25000000" aria-pressed="true">MacBook · 25 triệu</button>
+        <button type="button" data-name="Mua điện thoại" data-amount="18000000" aria-pressed="false">Điện thoại · 18 triệu</button>
+        <button type="button" data-name="Đặt chuyến đi" data-amount="9000000" aria-pressed="false">Chuyến đi · 9 triệu</button>
+      </div>
+      <label class="range">Số tiền của quyết định: <output id="amount-out">25.000.000 ₫</output>
+        <input id="amount" type="range" min="1000000" max="60000000" step="1000000" value="25000000">
+      </label>
+      <button type="button" class="btn" id="run">Xem tác động</button>
+    </div>
+    <div class="decision" id="decision" aria-live="polite"></div>
+    <ul class="impacts" id="impacts"></ul>
+    <div class="result" id="result" aria-live="polite"></div>
+    <p class="sim-note">Dữ liệu minh họa. Finora không bảo bạn nên hay không nên mua — quyết định cuối cùng thuộc về bạn.</p>
+  </div>
+</section><section id="he-thong" class="system wrap" aria-labelledby="t-sys">
+  <h2 id="t-sys">Không phải những tính năng rời rạc. Một hệ thống.</h2>
+  <p class="lead">Một giao dịch chạm đến ví, quỹ và ngân sách; rồi lan sang mục tiêu, khoản nợ, kế hoạch và lịch. Chọn một thành phần để xem vai trò của nó.</p>
+  <div class="tiers" id="tiers">
+    <div class="tier"><button data-k="gd" aria-pressed="true">Giao dịch</button></div>
+    <div class="tier"><button data-k="vi" aria-pressed="false">Ví</button><button data-k="quy" aria-pressed="false">Quỹ</button><button data-k="ns" aria-pressed="false">Ngân sách</button></div>
+    <div class="tier"><button data-k="tt" aria-pressed="false" class="core">Trạng thái tài chính</button></div>
+    <div class="tier"><button data-k="mt" aria-pressed="false">Mục tiêu</button><button data-k="no" aria-pressed="false">Khoản nợ</button></div>
+    <div class="tier"><button data-k="kh" aria-pressed="false">Kế hoạch</button><button data-k="lich" aria-pressed="false">Lịch</button></div>
+  </div>
+  <p class="detail" id="detail" aria-live="polite"></p>
+</section><section id="lich" class="sched wrap" aria-labelledby="t-lich">
+  <h2 id="t-lich">Thời gian, tiền và nghĩa vụ tương lai — trên cùng một dòng.</h2>
+  <ol class="timeline" id="timeline">
+    <li><time>05/10</time><span>Tiền nhà</span><b class="neg">−5.000.000 ₫</b></li>
+    <li><time>08/10</time><span>Thanh toán khoản vay</span><b class="neg">−2.500.000 ₫</b></li>
+    <li><time>15/10</time><span>Lương</span><b class="pos">+18.000.000 ₫</b></li>
+    <li><time>21/10</time><span>Đóng góp mục tiêu</span><b class="neg">−3.000.000 ₫</b></li>
+    <li><time>01/11</time><span>Gói đăng ký hằng tháng</span><b class="neg">−399.000 ₫</b></li>
+  </ol>
+</section>
+<section class="wrap" aria-labelledby="t-ai"><h2 id="t-ai">Trí tuệ nhân tạo hỗ trợ bạn hiểu, không quyết định thay bạn.</h2>
+<ol class="ai"><li>Dữ liệu</li><li>Hiểu dữ liệu</li><li>Phân tích</li><li>Tác động</li><li>Thông tin cho bạn</li><li>Bạn quyết định</li></ol></section><section class="final" aria-labelledby="t-final"><div class="wrap"><h2 id="t-final">Bạn quyết định. Finora giúp bạn nhìn thấy tác động trước khi quyết định.</h2><p class="cta-row"><a class="btn" style="background:#fff;color:var(--color-primary-dark)" href="#" data-app-link>Bắt đầu ngay</a></p></div></section>
+</main>
+<footer class="site-foot"><div class="wrap">
+ <div class="foot-grid">
+  <div><span class="logo" style="color:#fff"><span class="logo-mark" aria-hidden="true"></span>Finora</span><p style="margin-top:.6rem">Kiểm soát hôm nay, vững vàng ngày mai.</p></div>
+  <nav aria-label="Sản phẩm"><h2>Sản phẩm</h2><ul><li><a href="product.html">Tổng quan về Finora</a></li><li><a href="features.html">Tính năng</a></li><li><a href="pricing.html">Bảng giá</a></li></ul></nav>
+  <nav aria-label="Ứng dụng"><h2>Ứng dụng</h2><ul><li><a href="#" data-app-link>Finora Web</a></li><li><a href="download.html">Android</a></li><li><a href="download.html">Máy tính</a></li></ul></nav>
+  <nav aria-label="Tài nguyên"><h2>Tài nguyên</h2><ul><li><a href="download.html">Tải xuống</a></li><li><span class="soon">Hỗ trợ (sắp có)</span></li></ul></nav>
+  <nav aria-label="Pháp lý"><h2>Pháp lý</h2><ul><li><span class="soon">Chính sách quyền riêng tư (sắp có)</span></li><li><span class="soon">Điều khoản sử dụng (sắp có)</span></li></ul></nav>
+ </div>
+ <p class="copy">© 2026 Finora</p>
+</div></footer>
+<script src="js/config.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/simulation.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
